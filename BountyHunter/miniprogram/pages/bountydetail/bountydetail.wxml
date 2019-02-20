@@ -1,0 +1,173 @@
+<!--pages/bountydetail/bountydetail.wxml-->
+<view id='main_container'>
+
+  <!-- 1.最上面的一栏 -->
+  <view id='top_content'>
+    <!-- 返回 -->
+    <image src='../../images/back.png' class='images' ></image>
+    <!-- 中间文字 -->
+    <text>悬赏详情</text>
+    <image src='../../images/menu.png' class='images' ></image>
+  </view>
+
+  <!-- 2.中间的内容区域 -->
+  <scroll-view scroll-y id='middle_content' >
+
+    <!-- 2.1首先是广告词 -->
+    <view id='ad'>
+      <image src="../../images/protect.png" class='images' ></image>
+      赏金已托管,赚钱有保障!
+    </view>
+
+    <!-- 2.2 显示用户,赏金,赚到赏金的数量,剩余名额,审核时间 -->
+    <view>
+      <view id='user_and_money'>
+        <text style='margin-left:32rpx;'>追梦-斗地主</text>
+        <text style='margin-right:32rpx;'>赏0.51元</text>
+      </view>
+
+      <view id='nums'>
+        <text><text class='addwight' >{{people_earn}}</text>人已经赚到奖金</text>
+        <text>剩余<text class='addwight'>{{people_empty}}</text>个名额</text>
+        <text><text class='addwight'>{{leave_time}}</text>小时内审核</text>
+      </view>
+    </view>
+
+    <!-- 分隔区 -->
+    <view class='split_space'></view>
+
+    <!-- 2.3报名的条件限制 -->
+    <view id='limit_msg'>
+
+      <!-- 一些基本的文字描述 -->
+      <text style="margin-top:8rpx;margin-left:16rpx;">报名条件/限制</text>
+      <text style="margin-top:8rpx;margin-left:16rpx;font-size:30rpx;">
+        <text style='margin-right:16rpx'>{{task_desc}}</text>
+        <text>请先报名再做悬赏,否则无赏金</text>
+      </text>
+
+      <!-- 店铺信息 -->
+      <view id='store_msg'>
+
+        <view class='rowdis'>
+          <!--  店铺图像 -->
+          <image src='../../images/photo.png' class='circleImg' ></image>
+          <view id='name_rank_msg'>
+            <text>{{shopname}}</text>
+            <text>{{"编号:"+shopid}}</text>
+          </view>
+        </view>
+
+        <!-- 店铺的名称和编号 -->
+        
+
+        <!-- 小图标 -->
+        <view  id='icons' class='rowdis'>
+
+        <view class='icon_and_text'>
+          <image src='../../images/icon_shop.png' class='smallImg'></image>
+          <text style='font-size:24rpx;'>店铺</text>
+        </view>
+
+        <view style='margin-left:48rpx' class='icon_and_text'>
+          <image src='../../images/icon_msg.png' class='smallImg'></image>
+          <text style='font-size:24rpx;'>消息</text>
+        </view>
+
+        </view>
+
+      </view>
+
+
+    </view>
+
+    <!-- 分隔区 -->
+    <view class='split_space'></view>
+
+    <!-- 2.4步骤预览 -->
+    <view id='step_msg'>
+      <text style='font-size:24rpx;margin-left:24rpx;margin-top:16rpx;' >步骤预览</text>
+      
+      <!-- 每一个步骤 -->
+      <view class='every_step' >
+
+        <!-- 首先是步骤编号 -->
+        <view class='step_id'>
+          1
+        </view>
+
+        <!-- 步骤的详细内容 -->
+        <view class='step_detail'>
+          <!-- 首先是描述文字 -->
+         <view class='step_text'>
+         经常会碰到图片缩放的情况，比如服务器端返回的图片大小，可能大小不同，有的大，有的小
+         </view>
+
+         <!-- 步骤的描述图片 -->
+         <image  class='step_image' src='../../images/screen.jpg'></image>
+
+        </view>
+
+      </view>
+
+      <!-- 每一个步骤 -->
+      <view class='every_step' >
+
+        <!-- 首先是步骤编号 -->
+        <view class='step_id'>
+          1
+        </view>
+
+        <!-- 步骤的详细内容 -->
+        <view class='step_detail'>
+          <!-- 首先是描述文字 -->
+         <view class='step_text'>
+         经常会碰到图片缩放的情况，比如服务器端返回的图片大小，可能大小不同，有的大，有的小
+         </view>
+
+         <!-- 步骤的描述图片 -->
+         <image class='step_image' src='../../images/screen.jpg'>
+         
+         </image>
+
+        </view>
+
+      </view>
+
+      <!-- 每一个步骤 -->
+      <view class='every_step' >
+
+        <!-- 首先是步骤编号 -->
+        <view class='step_id'>
+          1
+        </view>
+
+        <!-- 步骤的详细内容 -->
+        <view class='step_detail'>
+          <!-- 首先是描述文字 -->
+         <view class='step_text'>
+         经常会碰到图片缩放的情况，比如服务器端返回的图片大小，可能大小不同，有的大，有的小
+         </view>
+
+         <!-- 步骤的描述图片 -->
+         <image class='step_image' src='../../images/screen.jpg'>
+         
+         </image>
+
+        </view>
+
+      </view>
+
+    </view>
+
+    <!-- -->
+
+  
+  </scroll-view>
+
+
+  <!-- 3.最下面的立即报名 -->
+  <view id='bottom_content'>
+    <button id='start_sign_up' >立即报名</button>
+  </view>
+</view>

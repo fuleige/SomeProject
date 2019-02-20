@@ -1,0 +1,173 @@
+/* pages/bountydetail/bountydetail.wxss */
+/*
+
+#DAE7D5
+#BBD3D8
+#6FBCE4
+
+*/
+
+#top_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  height: 96rpx;
+  background-color: #6FBCE4;
+  color: white;
+}
+
+
+#middle_content{
+  height: 980rpx;
+}
+
+.images{
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+#ad{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  height: 64rpx;
+  color: white;
+  font-size: 24rpx;
+  background-color: #BBD3D8;
+}
+
+#user_and_money{
+  margin-top: 16rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addwight{
+  font-weight: 900;
+}
+
+.split_space{
+  height: 24rpx;
+  background-color: #fafafa;
+}
+
+#nums{
+  margin: 16rpx 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+
+#limit_msg{
+  display: flex;
+  flex-direction: column;
+}
+
+.circleImg{
+  margin-top:24rpx;
+  margin-left:24rpx;
+  width:64rpx;
+  height:64rpx;
+  border-radius:32rpx;
+}
+
+#store_msg{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#name_rank_msg{
+  margin-top: 16rpx;
+  margin-left: 16rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+
+.icon_and_text{
+  display: flex;
+  flex-direction: column;
+  margin-top: 16rpx;
+}
+
+#icons{
+  margin-top: 16rpx;
+  margin-right: 96rpx;
+}
+
+.smallImg{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.rowdis{
+  display: flex;
+  flex-direction: row;
+}
+
+#step_msg{
+  display: flex;
+  flex-direction: column;
+}
+
+.every_step{
+  display: flex;
+  flex-direction: row;
+  margin-top: 32rpx;
+  margin-left: 32rpx;
+}
+
+.step_id{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40rpx;
+  height: 24rpx;
+  font-size: 20rpx;
+  background-color: #6FBCE4;
+  color: white;
+  border-radius: 16rpx;
+  margin-top: 6rpx;
+}
+
+.step_detail{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16rpx;
+}
+
+.step_text{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+}
+
+.step_image{
+  margin: 16rpx;
+  width: 120rpx;
+  height: 240rpx;
+  }
+
+
+
+
+
+
+#start_sign_up{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8rpx 32rpx;
+  background-color: #6FBCE4;
+  height: 88rpx;
+  color: white;
+  font-size: 30rpx;
+}
